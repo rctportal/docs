@@ -6,32 +6,197 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: hsla(358, 79%, 45%, 1);
-  --ifm-color-primary-dark: hsla(358, 79%, 35%, 1);
-  --ifm-color-primary-darker: hsla(358, 79%, 25%, 1);
-  --ifm-color-primary-darkest: hsla(358, 79%, 15%, 1);
-  --ifm-color-primary-light: hsla(358, 79%, 55%, 1);
-  --ifm-color-primary-lighter: hsla(358, 79%, 65%, 1);
-  --ifm-color-primary-lightest: hsla(358, 79%, 75%, 1);
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+    --ifm-color-white: hsla(220, 2%, 100%, 1);
+
+    --ifm-color-primary: hsla(358, 79%, 45%, 1);
+    --ifm-color-primary-dark: hsla(358, 79%, 35%, 1);
+    --ifm-color-primary-darker: hsla(358, 79%, 25%, 1);
+    --ifm-color-primary-darkest: hsla(358, 79%, 15%, 1);
+    --ifm-color-primary-light: hsla(358, 79%, 55%, 1);
+    --ifm-color-primary-lighter: hsla(358, 79%, 65%, 1);
+    --ifm-color-primary-lightest: hsla(358, 79%, 75%, 1);
+    --ifm-code-font-size: 95%;
+
+    --ifm-navbar-background-color: hsla(220, 2%, 95%, 1);
+    --ifm-footer-background-color: hsla(220, 2%, 25%, 1);
+
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+    --ifm-font-family-base: 'Roboto Condensed', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    --ifm-heading-font-family: 'Roboto Condensed', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+    --ifm-font-color: hsla(220, 2%, 15%, 1);
+    --ifm-font-color-light: hsla(220, 2%, 20%, 1);
+    --doc-sidebar-width: 350px;
+    --ifm-h1-font-size: 1.875rem;
+    --ifm-navbar-link-color: var(--ifm-color-primary-lighter);
+    --ifm-font-size-base: 100%;
+    --ifm-menu-link-padding-horizontal: 1rem;
+    --ifm-menu-link-padding-vertical: 0.5rem;
+
+    --ifm-heading-color: var(--ifm-color-primary);
+    --ifm-alert-border-color: var(--ifm-color-primary);
+    ----ifm-alert-background-color-highlight: var(--ifm-color-primary-lightest);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+    --ifm-color-primary: hsla(358, 79%, 45%, 1);
+    --ifm-color-primary-dark: hsla(358, 79%, 35%, 1);
+    --ifm-color-primary-darker: hsla(358, 79%, 25%, 1);
+    --ifm-color-primary-darkest: hsla(358, 79%, 15%, 1);
+    --ifm-color-primary-light: hsla(358, 79%, 55%, 1);
+    --ifm-color-primary-lighter: hsla(358, 79%, 65%, 1);
+    --ifm-color-primary-lightest: hsla(358, 79%, 75%, 1);
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+    --ifm-font-color: hsla(220, 2%, 95%, 1);
+    --ifm-font-color-light: hsla(220, 2%, 70%, 1);
+
+    --ifm-navbar-background-color: hsla(220, 2%, 20%, 1);
+    --ifm-footer-background-color: hsla(220, 2%, 20%, 1);
+
+    --ifm-background-color: hsla(220, 2%, 15%, 1) !important;
+}
+
+.markdown {
+    > h2 {
+        --ifm-h2-font-size: 1.9rem;
+    }
+
+    > h3 {
+        --ifm-h3-font-size: 1.5rem;
+    }
+
+    > h4 {
+        --ifm-h4-font-size: 1.2rem;
+    }
+}
+
+.navbar__logo {
+    height: 3rem;
+}
+
+.alert--success {
+    --ifm-alert-background-color: var(--ifm-navbar-background-color);
+    --ifm-alert-background-color-highlight: var(--ifm-navbar-background-color);
+    --ifm-alert-foreground-color: var(--ifm-font-color-light);
+    --ifm-alert-border-color: var(--ifm-font-color-light);
+}
+
+.footer--dark {
+    --ifm-footer-background-color: var(--ifm-navbar-background-color) !important;
+    --ifm-footer-color: var(--ifm-font-color);
+    --ifm-footer-link-color: var(--ifm-color-primary);
+    --ifm-footer-title-color: var(--ifm-color-white);
+
+    background-color: var(--ifm-footer-background-color);
 }
 
 img {
-  display: flex;
-  align-self: center;
-  margin: auto;
-  max-height: 650px;
+    display: flex;
+    align-self: center;
+    margin: auto;
+    max-height: 650px;
 }
+
+.img-30 {
+    --img-max-width: 30%!important;
+    @media screen and (max-width: 640px) {
+        --img-max-width: 60%!important;
+    }
+
+    max-width: var(--img-max-width);
+}
+
+.intro-visual {
+    padding: 4rem 114px 4.5rem 4rem;
+    margin: 0;
+    width: 100%;
+    background-color: var(--ifm-navbar-background-color);
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.intro-text {
+    margin-right: 48px;
+}
+
+.intro-text p {
+    color: var(--ifm-font-color) !important;
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 16px;
+}
+
+.intro-image {
+    max-width: 50%;
+}
+
+.intro-image img {
+    width: auto;
+}
+
+
+@media screen and (max-width: 640px) {
+    .intro-visual {
+        padding: 2rem 2rem 2.25rem 2rem;
+        margin: 0;
+        width: 100%;
+        background-color: var(--ifm-navbar-background-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: center;
+    }
+
+    .intro-text {
+        margin-right: 0;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    .intro-text p {
+        color: var(--ifm-font-color) !important;
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 16px;
+    }
+
+    .intro-image {
+        max-width: 100%;
+    }
+
+    .intro-image img {
+        width: auto;
+        object-fit: contain;
+    }
+}
+
+
+html[data-theme='dark'] .intro-visual {
+    background-color: var(--ifm-navbar-background-color);
+}
+
+.visual-div {
+    padding: 1rem;
+    background-color: var(--ifm-navbar-background-color);
+    display: flex;
+    border-radius: 0.5rem;
+    justify-content: space-around;
+
+    > div {
+        display: grid;
+        line-height: 2rem;
+        text-align: center;
+        margin-top: 1rem;
+
+        > img {
+            height: 3rem;
+            border-radius: 5px;
+        }
+    }
+}
+

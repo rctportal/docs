@@ -4,6 +4,7 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
+const rlc = require('remark-link-card');
 import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
@@ -32,11 +33,10 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          sidebarPath: require.resolve('./sidebars.js'),
+          remarkPlugins: [rlc],
           // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          routeBasePath: '/',
         },
         blog: false,
         theme: {
@@ -52,8 +52,7 @@ const config = {
       logo: {
         alt: 'RCT Power Portal Docs',
         src: '/img/rct-portal_logo.svg',
-        width: 82,
-        height: 82,
+        // srcDark: '/img/rct-portal_logo-white.svg',
       },
       items: [
         {
@@ -61,11 +60,11 @@ const config = {
           position: 'left',
           label: 'Documentation',
         },
-        // {
-        //   to: 'updates/release-notes',
-        //   position: 'left',
-        //   label: 'Release Notes',
-        // },
+        {
+          to: 'updates/release-notes',
+          position: 'left',
+          label: 'Release Notes',
+        },
       ],
     },
     footer: {
