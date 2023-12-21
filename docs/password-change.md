@@ -15,7 +15,7 @@ Enhance the security of your account by updating your password through the RCT P
 - **On mobile:** Open the popup menu by clicking the user icon in the top right corner.
 - Find and select "Password Change" from the menu.
 
-<img src="/img/screenshots/edit-profile-1.png" class="img-30"/>
+<img src="/img/screenshots/edit-profile-1.png" class="img-50"/>
 
 ## Step 2: Change Password
 
@@ -25,7 +25,7 @@ Enhance the security of your account by updating your password through the RCT P
     - New Password
     - Confirm New Password
 
-<img src="/img/screenshots/password-change-1.png" class="img-30"/>
+<img src="/img/screenshots/password-change-1.png" class="img-50"/>
 
 
 ## Step 3: Saving Changes
@@ -35,7 +35,7 @@ Enhance the security of your account by updating your password through the RCT P
 :::tip
 
 To ensure a strong and secure password, refer to the security tips provided by clicking the info icon next to the "New Password".
-<img src="/img/screenshots/password-change-2.png" class="img-30"/>
+<img src="/img/screenshots/password-change-2.png" class="img-50"/>
 
 :::
 

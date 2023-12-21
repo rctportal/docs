@@ -27,7 +27,7 @@ Enter the information associated with your registration:
 
 Confirm your entry by clicking on the "**RESET PASSWORD**" button.
 
-![Password Recovery](/img/screenshots/password-recovery-1.png)
+<img src="/img/screenshots/password-recovery-1.png" class="img-50"/>
 
 ## Step 4: Receive Reset Instructions via Email
 
@@ -35,9 +35,9 @@ Shortly after, check your inbox for an email with the subject "Reset password." 
 
 Example Email: [reset@password.com]
 
-![Password Recovery](/img/screenshots/password-recovery-2.png)
+<img src="/img/screenshots/password-recovery-2.png" class="img-50"/>
 
-![Password Recovery](/img/screenshots/password-recovery-3.png)
+<img src="/img/screenshots/password-recovery-3.png" class="img-50"/>
 
 ## Step 5: Set a New Password
 
@@ -46,17 +46,17 @@ At the "SET NEW PASSWORD" prompt:
 - Enter a new password.
 - Confirm your entry by re-entering the password in the corresponding field.
 
-![Password Recovery](/img/screenshots/password-recovery-4.png)
+<img src="/img/screenshots/password-recovery-4.png" class="img-50"/>
 
 ## Step 6: Review Password Requirements
 
 Before finalizing your new password, click on the info button to review the minimum requirements for a secure password.
 
-![Password Recovery](/img/screenshots/password-recovery-5.png)
+<img src="/img/screenshots/password-recovery-5.png" class="img-50"/>
 
 :::tip
 
-After the password reset and recovery is complete, you will be automatically redirected to the portal's login page. [RCT Power Portal Login Page](https://rct-portal.com/)
+After the password reset and recovery is complete, you will be automatically redirected to the [RCT Power Portal Login Page](https://rct-portal.com/).
 Log in with your email address and newly created password.
 
 :::

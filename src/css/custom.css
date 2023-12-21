@@ -73,6 +73,14 @@
     }
 }
 
+.markdown img {
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);*/
+    padding: 10px;
+    background-color: var(--ifm-navbar-background-color);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
 .navbar__logo {
     height: 3rem;
 }
@@ -104,6 +112,15 @@ img {
     --img-max-width: 30%!important;
     @media screen and (max-width: 640px) {
         --img-max-width: 60%!important;
+    }
+
+    max-width: var(--img-max-width);
+}
+
+.img-50 {
+    --img-max-width: 50%!important;
+    @media screen and (max-width: 640px) {
+        --img-max-width: 80%!important;
     }
 
     max-width: var(--img-max-width);

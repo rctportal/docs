@@ -15,7 +15,7 @@ To enhance your user experience and keep your information up-to-date, you can ed
 - **On mobile:** Open the popup menu by clicking the user icon in the top right corner.
 - Find and select "Edit Profile" from the menu.
 
-<img src="/img/screenshots/edit-profile-1.png" class="img-30"/>
+<img src="/img/screenshots/edit-profile-1.png" class="img-50"/>
 
 ## Step 2: Editing User Profile
 
@@ -28,7 +28,7 @@ To enhance your user experience and keep your information up-to-date, you can ed
 
 - If you decide to change your email address, you must also confirm the new email by filling in the "Email Confirmation" field to prevent typos.
 
-<img src="/img/screenshots/edit-profile-2.png" class="img-30"/>
+<img src="/img/screenshots/edit-profile-2.png" class="img-50"/>
 
 ## Step 3: Saving Changes
 
