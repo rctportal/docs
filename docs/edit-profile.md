@@ -20,6 +20,7 @@ To enhance your user experience and keep your information up-to-date, you can ed
 ## Step 2: Editing User Profile
 
 - After selecting "Edit Profile," you will be redirected to the user profile page.
+<img src="/img/screenshots/edit-profile-2.png" class="img-50"/>
 - On this page, you can modify the following details:
     - First Name
     - Last Name
@@ -27,8 +28,8 @@ To enhance your user experience and keep your information up-to-date, you can ed
     - Phone Number
 
 - If you decide to change your email address, you must also confirm the new email by filling in the "Email Confirmation" field to prevent typos.
+<img src="/img/screenshots/edit-profile-3.png" class="img-50"/>
 
-<img src="/img/screenshots/edit-profile-2.png" class="img-50"/>
 
 ## Step 3: Saving Changes
 

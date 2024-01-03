@@ -59,6 +59,10 @@
     --ifm-background-color: hsla(220, 2%, 15%, 1) !important;
 }
 
+.hidden {
+    display: none !important;
+}
+
 .markdown {
     > h2 {
         --ifm-h2-font-size: 1.9rem;
@@ -99,6 +103,15 @@
     --ifm-footer-title-color: var(--ifm-color-white);
 
     background-color: var(--ifm-footer-background-color);
+}
+
+@media screen and (min-height: 1080px) {
+    .footer {
+        position: sticky;
+        width: 100%;
+        bottom: 0;
+        z-index: 1000; /* Adjust the z-index based on your needs */
+    }
 }
 
 img {
