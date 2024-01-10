@@ -34,7 +34,7 @@ jobs:
     permissions:
       pages: write
       id-token: write
-    env: Production
+    env: github-pages
     steps:
       - name: Setup Pages
         uses: actions/configure-pages@v4
