@@ -10,8 +10,9 @@ jobs:
       contents: read
       pages: write
       id-token: write
-    environment: github-pages
-    url: https://rctportal.github.io/docs/
+    environment:
+      name: github-pages
+      url: https://rctportal.github.io/docs/
     runs-on: ubuntu-latest
     steps:
       - name: Actions checkout
