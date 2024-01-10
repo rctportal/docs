@@ -5,7 +5,13 @@ on:
   push:
 
 jobs:
-  prepare:
+  deploy:
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment: github-pages
+    url: https://rctportal.github.io/docs/
     runs-on: ubuntu-latest
     steps:
       - name: Actions checkout
@@ -15,12 +21,10 @@ jobs:
         with:
           node-version: 18.x
           cache: yarn
-  build:
-    runs-on: ubuntu-latest
-    needs: prepare
-    steps:
+      - name: Corepack
+        run: corepack enable
       - name: Yarn install dependencies
-        run: yarn install --frozen-lockfile --non-interactive
+        run: yarn install --immutable --non-interactive
       - name: Yarn build
         run: yarn build
       - name: Fix permissions
@@ -28,18 +32,10 @@ jobs:
           chmod -c -R +rX "build/" | while read line; do
             echo "::warning title=Invalid file permissions automatically fixed::$line"
           done
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    permissions:
-      pages: write
-      id-token: write
-    environment: github-pages
-    steps:
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v2
         with:
           path: build
       - name: Deploy to GitHub Pages
