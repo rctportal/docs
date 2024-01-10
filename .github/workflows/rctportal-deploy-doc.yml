@@ -1,0 +1,48 @@
+name: rctportal-deploy-doc
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Actions checkout
+        uses: actions/checkout@v4
+      - name: Set Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18.x
+          cache: yarn
+  build:
+    runs-on: ubuntu-latest
+    needs: prepare
+    steps:
+      - name: Yarn install dependencies
+        run: yarn install --frozen-lockfile --non-interactive
+      - name: Yarn build
+        run: yarn build
+      - name: Fix permissions
+        run: |
+          chmod -c -R +rX "build/" | while read line; do
+            echo "::warning title=Invalid file permissions automatically fixed::$line"
+          done
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    env: Production
+    steps:
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: build
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
