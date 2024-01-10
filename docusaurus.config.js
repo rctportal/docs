@@ -11,8 +11,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'RCT Power Portal Docs',
   tagline: 'Guides and Docs for rct-portal.com',
-  url: 'https://rct-portal.com/',
-  baseUrl: '/',
+  url: 'https://rctportal.github.io',
+  baseUrl: '/docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',

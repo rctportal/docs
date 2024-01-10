@@ -5,14 +5,7 @@ on:
   push:
 
 jobs:
-  deploy:
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: https://rctportal.github.io/docs/
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Actions checkout
@@ -39,7 +32,19 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: build
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: https://rctportal.github.io/docs/
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
 
