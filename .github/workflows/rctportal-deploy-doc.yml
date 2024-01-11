@@ -3,6 +3,8 @@ name: rctportal-deploy-doc
 on:
   workflow_dispatch:
   push:
+    branches:
+      - main
 
 jobs:
   build:
@@ -41,7 +43,7 @@ jobs:
       id-token: write
     environment:
       name: github-pages
-      url: https://rctportal.github.io/docs/
+      url: https://docs.i.rct-portal.com/
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
