@@ -2,8 +2,8 @@ name: rctportal-deploy-doc
 
 on:
   workflow_dispatch:
-  push:
-    types: [opened, synchronize, reopened, closed]
+  pull_request:
+    types: [ opened, synchronize, reopened, closed ]
     branches:
       - main
 
